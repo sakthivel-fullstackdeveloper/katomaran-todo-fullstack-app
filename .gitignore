@@ -1,0 +1,24 @@
+# Node modules (ignore in all subfolders like frontend/, backend/)
+**/node_modules/
+
+# package-lock.json files (ignore in all folders)
+**/package-lock.json
+
+# Expo-specific
+**/.expo/
+**/.expo-shared/
+**/expo-debug.log*
+
+# Log files
+**/npm-debug.log*
+**/yarn-debug.log*
+
+# macOS / OS-specific
+.DS_Store
+
+# Android/iOS folders (in case of ejection)
+**/android/
+**/ios/
+
+# Environment secrets
+
