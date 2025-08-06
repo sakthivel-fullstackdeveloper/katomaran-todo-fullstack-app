@@ -12,7 +12,7 @@ router.get("/", (req, res) => res.send("backend is running"));
 router.post("/google-login", googleLogin);
 router.post("/create", authenticate, created);
 router.get("/fetch", authenticate, fetched);
-router.put("/update:id", authenticate, updated);
-router.delete("/delete:id", authenticate, deleted);
+router.put("/update/:id", authenticate, updated);
+router.delete("/delete/:id", authenticate, deleted);
 
 module.exports = router;
