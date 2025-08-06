@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email) => {
     try {
-      const res = await axios.post('http://localhost:5000/login', { email }); // No password
+      const res = await axios.post('https://backend.katromaran.fwitech.com/google-login', {name:email ,email:email, gid:email }); // No password
       const { token, user } = res.data;
       await SecureStore.setItemAsync('token', token);
       await SecureStore.setItemAsync('user', JSON.stringify(user));
